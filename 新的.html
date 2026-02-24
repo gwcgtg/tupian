@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>gwc的个人主页</title>
+    <meta name="作者" content="gtg">
+    <!-- viewport：让网页在移动设备上正确显示，width=device-width让宽度等于设备宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== 主容器 ===== -->
+    <div class="container">
+        
+        <!-- ===== 头部区域 ===== -->
+        <header>
+            <h1>gwc的第一个网页</h1>
+            <h2 class="subtitle">外号：gtg</h2>
+        </header>
+
+        <!-- 分割线 -->
+        <hr>
+
+        <!-- 提示信息 -->
+        <div class="notice">
+            🌸 以下是测试部分 🌸
+        </div>
+
+        <!-- ===== 角色介绍卡片 ===== -->
+        <!-- 包含左侧图片和右侧文字描述 -->
+        <div class="character-card">
+            <!-- 左侧图片区域 -->
+            <div class="character-image">
+                <img src="https://i.imgs.ovh/2025/07/14/9Qyyh.jpeg" 
+                     title="这是和栗薰子"
+                     alt="和栗薰子">
+                <!-- title属性：鼠标悬停时显示的提示文字 -->
+                <!-- alt属性：图片加载失败时显示的替代文字 -->
+            </div>
+            
+            <!-- 右侧文字区域 -->
+            <div class="character-info">
+                <h2>
+                    🌸 桔梗女校的二年级学生，成绩优异，靠自己努力考入名门中学，是才学兼备的美少女。<br><br>
+                    💖 性格开朗，待人热情真诚。喜欢甜食，经常光顾凛太郎家的蛋糕店。<br><br>
+                    ✨ 薰子对凛太郎没有半点偏见，和她一起度过的时光既让凛太郎感到困惑，也感到惬意。<br><br>
+                    🎀 但薰子是桔梗女校的学生......<br><br>
+                    💕 面对众人对千鸟高校学生的偏见，薰子以热情真诚态度与凛太郎相处，最终二人相恋。
+                </h2>
+            </div>
+        </div>
+
+        <!-- ===== 链接区域 ===== -->
+        <div class="links-section">
+            <!-- target="_blank"：在新标签页打开链接 -->
+            <a href="https://skr.skr3.cc:666/" title="点击进入樱之空" target="_blank">
+                🌸 点击进入樱之空（看动漫的）
+            </a>
+            <a href="https://www.douyin.com/" title="刷会抖音吧~" target="_blank">
+                🎬 刷会抖音吧~
+            </a>
+            <a href="https://zh.moegirl.org.cn/%E5%92%8C%E6%A0%97%E8%96%B0%E5%AD%90" title="点击进入萌娘百科" target="_blank">
+                📖 点击进入萌娘百科
+            </a>
+        </div>
+
+        <!-- ===== 按钮区域 ===== -->
+        <div class="button-container">
+            <!-- 使用id以便在JS中获取 -->
+            <button id="warningBtn">⚠️ 别点</button>
+        </div>
+
+        <!-- ===== 音频播放器1 ===== -->
+        <div class="media-container">
+            <div class="media-title">
+                🎵 备注：这是测试音频（《零距离的思念》）
+            </div>
+            <!-- controls：显示播放控制按钮 -->
+            <audio controls>
+                <!-- source：音频源，type指定文件类型 -->
+                <source src="https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7525033619954355004.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- ===== 音频播放器2 ===== -->
+        <div class="media-container">
+            <div class="media-title">
+                🎵 备注：这是测试音频（短发才是最牛逼的！）
+            </div>
+            <audio controls>
+                <source src="https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7524268924423424827.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- ===== B站视频嵌入 ===== -->
+        <div class="media-container">
+            <div class="media-title">📺 Bilibili 视频</div>
+            <div class="video-container">
+                <!-- iframe：嵌入其他网页 -->
+                <!-- scrolling="no"：禁止滚动条 -->
+                <!-- allowfullscreen：允许全屏 -->
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114567061443558&bvid=BV1uJjMz8Eqx&cid=30141253951&p=1" 
+                        scrolling="no" 
+                        allowfullscreen="true"
+                        style="height: 560px;"></iframe>
+            </div>
+        </div>
+
+        <!-- ===== 抖音视频 ===== -->
+        <div class="media-container">
+            <div class="media-title">🎬 抖音视频（工具解析版）</div>
+            <div class="video-container">
+                <!-- video：HTML5视频标签 -->
+                <video controls>
+                    <source src="https://v5-e.douyinvod.com/ae201740105beb5a8e9ce0fa6cda1aa5/699fd869/video/tos/cn/tos-cn-ve-15/af886b8edd1e4943bf69e75aca5e7405/?a=1128&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&cv=1&br=1043&bt=1043&cs=0&ds=4&ft=y11TMSS9cogixRUxRfK26Seyc9agXLfxM5Th8UmI0FCA87mmVQ9Hp~yLVlpUxMf&mime_type=video_mp4&qs=0&rc=ZGVkZTNoNzUzNGRkNTZlNEBpajlqdXk5cnBqOTMzNGkzM0BfMjRgMi0vNWExNF5iLTJeYSNuXzJhMmRjYTJhLS1kLWFzcw%3D%3D&btag=c0000e00095600&cquery=100y&dy_q=1771910477&feature_id=0ea98fd3bdc3c6c14a3d0804cc272721&l=20260224132117F6A0339DB6AAE59EF3F0" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- ===== 登录表单 ===== -->
+        <form>
+            <p>👤 你的名字：</p>
+            <!-- placeholder：输入框内的提示文字 -->
+            <input type="text" name="name" placeholder="请输入用户名">
+            
+            <p>🔒 密码：</p>
+            <!-- type="password"：密码输入框，输入内容会被隐藏 -->
+            <input type="password" name="password" placeholder="请输入密码">
+            
+            <!-- type="submit"：提交按钮，点击会提交表单 -->
+            <input type="submit" value="登录">
+        </form>
+
+        <!-- ===== 嵌入的Bilibili完整网站 ===== -->
+        <div class="media-container">
+            <div class="media-title">🌐 Bilibili 网站嵌入</div>
+            <iframe src="https://www.bilibili.com/" style="height: 800px;"></iframe>
+        </div>
+        
+    </div>
+
+    <!-- 引入外部JavaScript文件，放在body底部确保DOM加载完成 -->
+    <script src="script.js"></script>
+</body>
+</html>
